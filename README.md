@@ -69,7 +69,7 @@ let audioMaker = new AudioMaker({
 ### 2. Initial parameter
 | Prop | Type | Default | Note |
 |---|---|---|---|
-| filePath | String | null | Required!!!, iffilePath === 'noootown', then store audio under '/Document/noootown' |
+| filePath | String | null | Required!!!, if filePath === 'noootown', then store audio under '/Document/noootown' |
 | bitRate | Integer | 128000 |  |
 | samplingRate | Integer | 48000 |  |
 | outputFormat | String | 'MPEG_4' | MediaRecorder.OutputFormat.MPEG_4 -> fill in 'MPEG_4' |
