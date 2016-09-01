@@ -141,7 +141,7 @@ public class ReactNativeAudioMakerManager extends ReactContextBaseJavaModule {
 
         mRecorder.setOutputFile(audioName);
         try {
-            audioRecorder.prepare();
+            mRecorder.prepare();
             return true;
         } catch (Exception e) {
             errCallback.invoke("Prepare error! "+e.getMessage());
@@ -155,7 +155,7 @@ public class ReactNativeAudioMakerManager extends ReactContextBaseJavaModule {
                 mRecorder.start();
                 isRecording = true;
             } catch (final Exception e) {
-                errorCallback.invoke("Start error! " + e.getMessage());
+                errCallback.invoke("Start error! " + e.getMessage());
             }  
         }
     }
@@ -164,7 +164,7 @@ public class ReactNativeAudioMakerManager extends ReactContextBaseJavaModule {
     public void stopRecord(final Callback sucCallback,final Callback errCallback) {     
         if (isRecording) {
             File audioFile = new File(audioName);
-            File audioFilePath = audioFile.getAbsolutePath();
+            String audioFilePath = audioFile.getAbsolutePath();
             Intent intent = new Intent(Intent.ACTION_MEDIA_SCANNER_SCAN_FILE);         
             intent.setData(Uri.fromFile(audioFile));
             _reactContext.sendBroadcast(intent);
