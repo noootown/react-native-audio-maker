@@ -1,4 +1,4 @@
-# React-native-audio-maker
+# react-native-audio-maker
 React Native library for audio recording in Android.
 
 ## About
