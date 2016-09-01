@@ -19,7 +19,7 @@ import java.util.List;
 
 public class ReactNativeAudioMakerManager extends ReactContextBaseJavaModule {
      private final ReactApplicationContext _reactContext;
-     private static final String REACT_CLASS = "AudioMakerManager";
+     private static final String REACT_CLASS = "ReactNativeAudioMaker";
      private MediaRecorder mRecorder = null;
      private String filePath = null;
      private String audioName = null;
@@ -48,13 +48,13 @@ public class ReactNativeAudioMakerManager extends ReactContextBaseJavaModule {
     }
 
     @ReactMethod
-    public void setBitRate(int bitRate) {
-        this.bitRate=bitRate;
+    public void setBitRate(double bitRate) {
+        this.bitRate=(int)bitRate;
     }
 
     @ReactMethod
-    public void setSamplingRate(int samplingRate) {
-        this.samplingRate=samplingRate;
+    public void setSamplingRate(double samplingRate) {
+        this.samplingRate=(int)samplingRate;
     }
 
     @ReactMethod
@@ -119,7 +119,7 @@ public class ReactNativeAudioMakerManager extends ReactContextBaseJavaModule {
         }
     }
 
-    private boolean prepareRecord(final Callback errCallback, String filename) {
+    private boolean prepareRecord(String filename, final Callback errCallback) {
         mRecorder = new MediaRecorder();
         mRecorder.setAudioSource(MediaRecorder.AudioSource.MIC);
         mRecorder.setOutputFormat(outputFormat);
@@ -149,11 +149,12 @@ public class ReactNativeAudioMakerManager extends ReactContextBaseJavaModule {
         }           
     }
     @ReactMethod
-    public void startRecord(final Callback sucCallback, final Callback errCallback,String filename) {
-        if (prepareRecord(errCallback,filename)) {
+    public void startRecord(String filename, final Callback sucCallback, final Callback errCallback) {
+        if (prepareRecord(filename, errCallback)) {
             try {
                 mRecorder.start();
                 isRecording = true;
+                sucCallback.invoke("Start Recording! ");
             } catch (final Exception e) {
                 errCallback.invoke("Start error! " + e.getMessage());
             }  

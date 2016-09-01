@@ -1,21 +1,91 @@
 {
-  "name": "react-native-audio-maker",
-  "version": "0.0.2",
-  "description": "React Native library for audio recording in Android",
-  "main": "AudioMaker.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "_args": [
+    [
+      {
+        "raw": "react-native-audio-maker@0.0.2",
+        "scope": null,
+        "escapedName": "react-native-audio-maker",
+        "name": "react-native-audio-maker",
+        "rawSpec": "0.0.2",
+        "spec": "0.0.2",
+        "type": "version"
+      },
+      "/Users/i314i/Downloads/test"
+    ]
+  ],
+  "_from": "react-native-audio-maker@0.0.2",
+  "_id": "react-native-audio-maker@0.0.2",
+  "_inCache": true,
+  "_installable": true,
+  "_location": "/react-native-audio-maker",
+  "_nodeVersion": "6.3.1",
+  "_npmOperationalInternal": {
+    "host": "packages-16-east.internal.npmjs.com",
+    "tmp": "tmp/react-native-audio-maker-0.0.2.tgz_1472757773832_0.9517596284858882"
   },
+  "_npmUser": {
+    "name": "noootown",
+    "email": "i314i@yahoo.com.tw"
+  },
+  "_npmVersion": "3.10.3",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "react-native-audio-maker@0.0.2",
+    "scope": null,
+    "escapedName": "react-native-audio-maker",
+    "name": "react-native-audio-maker",
+    "rawSpec": "0.0.2",
+    "spec": "0.0.2",
+    "type": "version"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/react-native-audio-maker/-/react-native-audio-maker-0.0.2.tgz",
+  "_shasum": "0866a01de74f6941a18b4841fc3bdeed64adfd2f",
+  "_shrinkwrap": null,
+  "_spec": "react-native-audio-maker@0.0.2",
+  "_where": "/Users/i314i/Downloads/test",
+  "author": {
+    "name": "noootown"
+  },
+  "bugs": {
+    "url": "https://github.com/noootown/react-native-audio-maker/issues"
+  },
+  "dependencies": {},
+  "description": "React Native library for audio recording in Android",
+  "devDependencies": {},
+  "directories": {},
+  "dist": {
+    "shasum": "0866a01de74f6941a18b4841fc3bdeed64adfd2f",
+    "tarball": "https://registry.npmjs.org/react-native-audio-maker/-/react-native-audio-maker-0.0.2.tgz"
+  },
+  "gitHead": "1a64cb6d0513a326f21ea14c6ef20d1eecce7a53",
+  "homepage": "https://github.com/noootown/react-native-audio-maker#readme",
   "keywords": [
     "react-native",
     "android",
     "audio",
     "recording"
   ],
-  "repository" : {
-      "type" : "git",
-      "url" : "https://github.com/noootown/react-native-audio-maker"
+  "license": "ISC",
+  "main": "AudioMaker.js",
+  "maintainers": [
+    {
+      "name": "noootown",
+      "email": "i314i@yahoo.com.tw"
+    }
+  ],
+  "name": "react-native-audio-maker",
+  "optionalDependencies": {},
+  "readme": "ERROR: No README data found!",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/noootown/react-native-audio-maker.git"
   },
-  "author": "noootown",
-  "license": "ISC"
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "version": "0.0.2"
 }
