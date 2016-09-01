@@ -17,7 +17,7 @@ function AudioMaker(setting) {
         AudioMakerManager.setAudionEncoder(setting.encoder)
 };
 
-AudioMaker.prototype.startRecord = function(sucCallback, errCallback, filename) {
+AudioMaker.prototype.startRecord = function(filename, sucCallback, errCallback) {
     AudioMakerManager.startRecord(filename, (data) => sucCallback(data),(error) => errCallback(error))  
 }
 AudioMaker.prototype.stopRecord = function(sucCallback, errCallback) {
