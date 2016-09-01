@@ -1,4 +1,4 @@
-ct-native-audio-maker
+# React-native-audio-maker
 React Native library for audio recording in Android.
 
 ## About
@@ -109,4 +109,4 @@ audiomaker.setAudioEncoder(encoder)
 ```
 
 ## License
-### ISCif
+### ISC
